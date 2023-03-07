@@ -12,5 +12,7 @@
   "devDependencies": {
     "near-cli": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-icons": "^4.8.0"
+  }
 }
