@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 10rem; */
+  height: auto;
+  padding: 0 .5rem;
+  gap: 1rem;
+  background-color: rgba(52, 58, 64, 1);
+  color: white;
+  padding: 1rem;
+}
+
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brandLogo {
+  width: 200px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.text {
+  color: rgba(169, 169, 170, 1)
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

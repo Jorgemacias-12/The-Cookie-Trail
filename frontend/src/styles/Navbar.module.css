@@ -1,0 +1,52 @@
+.container {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  display: flex;
+  background-color: rgba(18, 103, 130, 1);
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brandLogo {
+  height: 4rem;
+}
+
+.title {
+  color: white;
+  font-weight: 900;
+}
+
+.icon {
+  color: white;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  
+  .container {
+    align-items: center;
+  }
+
+  .icon {
+    display: none;
+  }
+}
