@@ -4,3 +4,8 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
+.content {
+  padding: 1rem;
+  background-color: rgba(33, 37, 41, 1);
+}
