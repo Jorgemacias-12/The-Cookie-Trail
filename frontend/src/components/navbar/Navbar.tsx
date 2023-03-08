@@ -3,13 +3,16 @@ import React, { useState } from 'react'
 import styles from '@/styles/Navbar.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Menu } from '@/components/menu/Menu';
+import { CheckIsDesktop } from '@/hooks/useMedia';
 
 export const Navbar = () => {
+
+  const isDesktop = CheckIsDesktop();
 
   const [visible, setVisible] = useState(false);
 
   const showMenu = () => {
-
+    setVisible(!visible);
   }
 
   return (
@@ -22,19 +25,20 @@ export const Navbar = () => {
         </h1>
 
       </section>
-      
-      <Menu />
 
-      <Avatar />
+      <section className="menuContainer">
+
+        {
+          visible && !isDesktop && < Menu />
+        }
+
+        {
+          isDesktop && < Menu />
+        }
+
+      </section>
 
       <GiHamburgerMenu className={styles.icon} onClick={showMenu} />
-
-      {/* <Menu /> */}
-
-      {/* {
-        visible && <Menu />
-      } */}
-
     </nav>
   )
 }

@@ -1,9 +1,11 @@
 .container {
-  padding: 0 1rem;
+  padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  /* height: 5rem */
+
   display: flex;
   background-color: rgba(18, 103, 130, 1);
 }
@@ -29,21 +31,12 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width: 960px) {
-  .container {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .title {
-    font-size: 1rem;
-  }
-}
-
 @media screen and (min-width: 960px) {
   
   .container {
+    flex-direction: row;
     align-items: center;
+    height: 3.5rem;
   }
 
   .icon {
