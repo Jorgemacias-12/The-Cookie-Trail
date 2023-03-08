@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 
 import styles from '@/styles/Navbar.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi'

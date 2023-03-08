@@ -1,9 +1,11 @@
 import React from 'react'
 
+import styles from '@/styles/Avatar.module.css'
+
 export const Avatar = () => {
   return (
-    <div>
+    <section className={styles.container}>
       
-    </div>
+    </section>
   )
 }
