@@ -8,48 +8,42 @@ export class User {
   private _socialNetworks: Array<SocialNetwork>;
   private _antiquity: number;
 
-  constructor(id: string, fullName: string,
-    biography: string, socialNetworks: Array<SocialNetwork>, antiquity: number) {
-    this._id = id;
-    this._fullName = fullName;
-    this._biography = biography;
-    this._socialNetworks = socialNetworks;
-    this._antiquity = antiquity;
+  constructor() {
   }
 
-  get ID(): string {
+  public get ID(): string {
     return this._id;
   }
 
-  set ID(value: string) {
+  public set ID(value: string) {
     this._id = value;
   }
 
-  get FullName(): string {
+  public get FullName(): string {
     return this._fullName;
   }
 
-  set FullName(value: string) {
+  public set FullName(value: string) {
     this._fullName = value;
   }
 
-  get Biography(): string {
+  public get Biography(): string {
     return this._biography;
   }
 
-  set Biography(value: string) {
+  public set Biography(value: string) {
     this._biography = value;
   }
 
-  get SocialNetworks(): Array<SocialNetwork> {
+  public get SocialNetworks(): Array<SocialNetwork> {
     return this._socialNetworks;
   }
 
-  set SocialNetworks(value: Array<SocialNetwork>) {
+  public set SocialNetworks(value: Array<SocialNetwork>) {
     this._socialNetworks = value;
   }
 
-  get Antiquity(): number {
+  public get Antiquity(): number {
     return this._antiquity;
   }
 

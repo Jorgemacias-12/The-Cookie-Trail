@@ -42,4 +42,19 @@ class ProjectsContract {
 
   }
 
+  @view({})
+  getUsers(): UnorderedMap<User> {
+    return this.Users;
+  }
+
+  @call({})
+  addUser({id, fullName, avatar, biography, socialNetworks, antiquity}): void  {
+
+    let user;
+
+    user = new User();
+
+  }
+  
+
 }

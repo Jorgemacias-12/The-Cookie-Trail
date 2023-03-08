@@ -86,7 +86,7 @@ export class Project {
     this.SocialNetworks = value;
   }
 
-  public get Rewards(): Reward {
+  public get Rewards(): Reward[] {
     return this._Rewards;
   }
 
