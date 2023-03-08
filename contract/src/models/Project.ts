@@ -1,7 +1,9 @@
 import { Category } from "./Category";
+import { Reward } from "./Rewards";
+import { SocialNetwork } from "./SocialNetwork";
 
 export class Project {
- 
+
   private _ID: string;
   private _FullName: string;
   private _ProjectName: string;
@@ -9,6 +11,9 @@ export class Project {
   private _Category: Category;
   private _MaxAmount: number;
   private _Term: number;
+  private _ActualAmount: number;
+  private _SocialNetworks: SocialNetwork[];
+  private _Rewards: Reward[];
 
   public get ID(): string {
     return this._ID;
@@ -58,11 +63,35 @@ export class Project {
     this._MaxAmount = value;
   }
 
-  public get Plazo(): number {
+  public get Term(): number {
     return this._Term;
   }
 
-  public set Plazo(value: number) {
+  public set Term(value: number) {
     this._Term = value;
   }
+
+  public get ActualAmout(): number {
+    return this._ActualAmount;
+  }
+  public set ActualAmount(value: number) {
+    this.ActualAmount = value;
+  }
+
+  public get SocialNetworks(): SocialNetwork[] {
+    return this.SocialNetworks;
+  }
+
+  public set SocialNetworks(value: SocialNetwork[]) {
+    this.SocialNetworks = value;
+  }
+
+  public get Rewards(): Reward {
+    return this._Rewards;
+  }
+
+  public set Rewards(value: Reward[]) {
+    this.Rewards = value;
+  }
+
 }
