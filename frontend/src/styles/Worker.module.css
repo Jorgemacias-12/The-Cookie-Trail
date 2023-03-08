@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #58b4d1;
+  width: fit-content;
+  height: max-content;
+  /* width: 19rem; */
+  height: 25rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.image {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+  border: .1rem solid #ccc;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: justify;
+}
+
+.textContainer {
+  display: flex;
+  /* text-align: center; */
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
