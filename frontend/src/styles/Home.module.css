@@ -1,0 +1,55 @@
+.container {
+ display: flex;
+ flex-direction: column;
+ /* gap: 4rem;  */
+ gap: 2rem; 
+ color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.descriptionn {
+  width: 100%;
+}
+
+.callToAction {
+  width: 100%;
+  display: flex;
+  gap: .5rem;
+  margin-top: 4rem;
+  justify-content: center; 
+  align-items: center;
+}
+
+.button {
+  border: .1rem solid #126782;
+  background-color: transparent;
+  outline: none;
+  width: 50%;
+  height: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: .1rem solid transparent;
+  background-color: #126782;
+}
+
+
+@media screen and (min-width: 960px) {
+  .button {
+    width: 15%;
+  }
+}
