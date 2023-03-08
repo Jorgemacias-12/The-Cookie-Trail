@@ -8,7 +8,7 @@ export class Project {
   private _Description: string;
   private _Category: Category;
   private _MaxAmount: number;
-  private _Plazo: number;
+  private _Term: number;
 
   public get ID(): string {
     return this._ID;
@@ -59,10 +59,10 @@ export class Project {
   }
 
   public get Plazo(): number {
-    return this._Plazo;
+    return this._Term;
   }
 
   public set Plazo(value: number) {
-    this._Plazo = value;
+    this._Term = value;
   }
 }
